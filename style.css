@@ -515,6 +515,17 @@ footer p {
 }
 
 
+.section__pic-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__pic-container2 img {
+  max-width: 100%;
+  display: flex;
+}
+
 
 
 
