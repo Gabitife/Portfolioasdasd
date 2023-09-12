@@ -241,6 +241,12 @@ section {
   text-align: center;
 }
 
+.section__text__pcarro {
+  color: #f0f0f0;
+  margin-top: 20px;
+  text-align: center;
+}
+
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
@@ -538,7 +544,7 @@ footer p {
 .cont {
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  height: 80vh;
   padding: 80px 70px;
 }
 .cont__inner {
@@ -663,6 +669,9 @@ footer p {
 }
 .el__text {
   text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
   font-size: 40px;
   color: #fff;
 }
@@ -849,10 +858,6 @@ footer p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-
 }
 
 .wrapper {
