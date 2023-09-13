@@ -459,6 +459,17 @@ article .icon {
   border-color: var(--container-border);
 }
 
+.project-btnv2 {
+  color: white;
+  border-color: white;
+}
+
+.project-btnv2:hover {
+  color: white;
+  font-size: 12px;
+  border-color: white;
+}
+
 /* CONTACT */
 
 #contact {
@@ -656,7 +667,6 @@ footer p {
   font-size: 18px;
 }
 .el__content {
-  z-index: ;
   position: absolute;
   align-items: center;
   justify-items: center;
@@ -987,6 +997,7 @@ footer p {
 
 .details {
     position: absolute;
+    text-align: center;
     bottom: -100%;
     left: 0;
     width: 100%;
@@ -1037,13 +1048,23 @@ footer p {
 }
 
 .details .tags {
-    display: flex;
+
     gap: .375em;
     margin-bottom: .875em;
-    font-size: .85em;
+  
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 5px;
 }
 
 .details .tags span {
+    display: flex;
     padding: .35rem .65rem;
     color: #fff;
     border: 1.5px solid rgba(255 255 255 / 0.4);
