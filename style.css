@@ -149,15 +149,17 @@ nav a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: var(--primary-color);
-  width: fit-content;
+  background-color: none;
+  width: max-content;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
 }
 
 .menu-links a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
@@ -172,6 +174,9 @@ nav a:hover {
 
 .menu-links.open {
   max-height: 300px;
+ 
+  align-items: center;
+  justify-content: center;
 }
 
 .hamburger-icon.open span:first-child {
