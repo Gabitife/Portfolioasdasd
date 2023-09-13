@@ -149,18 +149,19 @@ nav a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: none;
+  background-color: rgba(255, 255, 255, 0.39);
   width: max-content;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  border-radius: 10px;
 }
 
 .menu-links a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   font-size: 1.5rem;
   color: var(--secondary-color);
@@ -655,13 +656,16 @@ footer p {
   font-size: 18px;
 }
 .el__content {
-  z-index: -1;
+  z-index: ;
   position: absolute;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  padding: 30px;
+  padding: 5px;
   opacity: 0;
   pointer-events: none;
   transition: all 0.1s;
@@ -674,12 +678,68 @@ footer p {
 }
 .el__text {
   text-transform: uppercase;
+  display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   margin-top: 150px;
   font-size: 40px;
   color: #fff;
 }
+
+/* @media (max-width: 769px) {
+  .el__heading {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+} */
+
+
+@media (max-width: 889px) {
+  .el__heading {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    animation: fadeIn 1s ease-in-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Diminuir o tamanho da fonte em telas menores */
+@media (max-width: 768px) {
+  .el__text {
+    font-size: 30px;
+  }
+}
+
+/* Diminuir ainda mais o tamanho da fonte em telas ainda menores */
+@media (max-width: 480px) {
+  .el__text {
+    font-size: 26px;
+  }
+}
+
+/* Diminuir o tamanho da fonte em telas menores */
+@media (max-width: 768px) {
+  .section__text__pcarro {
+    font-size: 16px;
+  }
+}
+
+/* Diminuir ainda mais o tamanho da fonte em telas ainda menores */
+@media (max-width: 480px) {
+  .section__text__pcarro {
+    font-size: 12px;
+  }
+}
+
 .el__close-btn {
   z-index: -1;
   position: absolute;
