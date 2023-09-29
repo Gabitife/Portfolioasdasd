@@ -107,17 +107,4 @@ navItems.forEach(item => {
       $cont.classList.remove('s--el-active');
       document.querySelector('.el.s--active').classList.remove('s--active');
     });
-<<<<<<< HEAD
   });
-=======
-  });
-
-
-
-
-
-
-
-  
-  
->>>>>>> ca0206912c783e7afb76ae1160a8b98d70fb8106
